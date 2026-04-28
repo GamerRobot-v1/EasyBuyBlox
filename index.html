@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EasyBuyBlox</title>
   <link rel="icon" type="image/png" href="logo.png">
+
   <style>
     * {
       margin: 0;
@@ -54,17 +57,16 @@
       opacity: 0.7;
     }
 
-    /* Hero Section */
+    /* Hero Banner */
     .hero {
       margin: 20px;
-      height: 300px;
-      background: #666;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 20px;
-      text-align: center;
+      width: 100%;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: auto; /* keeps aspect ratio (no stretch) */
+      display: block;
     }
 
     /* Products */
@@ -131,9 +133,9 @@
       color: white;
       margin-top: 20px;
     }
-
   </style>
 </head>
+
 <body>
 
   <div class="navbar">
@@ -150,18 +152,19 @@
     </div>
   </div>
 
+  <!-- Hero Banner -->
   <div class="hero">
     <a href="#">
-      <img src="banner.png" alt="Banner" style="width:100%; height:100%; object-fit:cover;">
+      <img src="banner.png" alt="Banner" class="hero-img">
     </a>
   </div>
 
   <div class="products">
 
-    <!-- Repeat this block to add more products -->
+    <!-- Product Card -->
     <div class="product-card">
-       <a>
-        <img src="index.html" class="product-image" alt="Product">
+      <a href="#">
+        <img src="product.png" class="product-image" alt="Product">
       </a>
       <div class="product-info">
         <div class="product-title">Product</div>
@@ -169,7 +172,6 @@
         <a href="#" class="btn">Buy Now</a>
       </div>
     </div>
-
 
   </div>
 
