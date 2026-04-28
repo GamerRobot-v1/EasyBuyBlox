@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - EasyBuyBlox</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+    }
+
+    /* Navbar (same as main page) */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(90deg, #4a6cf7, #6a82fb);
+      padding: 15px 30px;
+      color: white;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo-box {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    /* Checkout Layout */
+    .checkout-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .checkout-box {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .summary-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #4a6cf7;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #3b5be0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 768px) {
+      .checkout-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo.png" class="logo-box" alt="Logo">
+      </a>
+      EasyBuyBlox
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="more.html">More</a>
+    </div>
+  </div>
+
+  <div class="checkout-container">
+
+    <!-- Product Preview -->
+    <div class="checkout-box">
+      <h2>Product</h2>
+      <img src="gik.png" style="width:100%; border-radius:10px; margin-bottom:15px; object-fit:cover;">
+      <div class="summary-item">
+        <span>Galaxy Kitsune</span>
+      </div>
+    </div>
+
+    <!-- Shipping + Summary -->
+    <div>
+      <div class="checkout-box" style="margin-bottom:20px;">
+        <h2>Shipping Details</h2>
+        <input type="text" placeholder="Username">
+        <input type="text" placeholder="Nickname (optional)">
+      </div>
+
+      <div class="checkout-box">
+        <h2>Order Summary</h2>
+        <div class="Galaxy Kitsune">
+          <span>Total</span>
+          <strong>R$500</strong>
+        </div>
+        <a href="#" class="btn" style="display:block; text-align:center;">Place Order</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 EasyBuyBlox - All Rights Reserved
+  </footer>
+
+</body>
+</html>
